@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title> 
+	<script> 
+	       function play_vid() 
+	       {
+	       	  document.getElementById("vid").play();
+	       }  
+	       function pause_vid() 
+	       {
+	       	 document.getElementById("vid").pause();
+	       }
+    </script>
+</head>
+<body> 
+	 <video id="vid" controls style="width: 600px;height: 600px;"> 
+
+           <source src="C:\Users\DELL\Downloads\Bana sharabi.mp4">
+	 </video><br><br> 
+	 <button onclick="play_vid()">Play</button> 
+	 <button onclick="pause_vid()">Pause</button>
+
+</body>
+</html>

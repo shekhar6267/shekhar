@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>  
+	<script>  
+
+	         function inactived() 
+	         {
+	         	var AllINPUT=document.getElementsByTagName("input"); 
+	         	var LENGTH=document.getElementsByTagName("input").length; 
+	         	for( var i=0;i<LENGTH;i++) 
+	         	{
+	         		AllINPUT[i].disabled=true;
+	         	}
+	         } 
+		     function actived() 
+		     {
+		     	var AllINPUT=document.getElementsByTagName("input"); 
+		     	var LENGTH=document.getElementsByTagName("input").length 
+		     	for(var i=0;i<LENGTH;i++) 
+		     	{
+		     		AllINPUT[i].disabled=false;
+		     	}
+		     }
+	        function calci() 
+	        {
+	        	var para=document.getElementById("result").value; 
+	        	var OT=eval(para); 
+	        	document.getElementById("result").value=OT;
+	        } 
+
+    </script> 
+    <style> 
+         .op 
+         {
+         	width: 200px; 
+         	height: 310px; 
+         	background-color:black; 
+
+         } 
+         #result 
+         {
+         	position: relative; 
+         	top: -15px;
+         } 
+         .c1 
+         {
+         	margin-top: 100px;
+         } 
+         #button9 
+         { 
+         	position: relative; 
+         	right: 7px; 
+         	width: 35px; 
+         	height: 30px;
+         } 
+         #button8 
+         { 
+         	position: relative;  
+         	left: 1px; 
+         	width: 35px; 
+         	height: 30px; 
+
+         } 
+         #button7 
+         {
+         
+         	width: 35px; 
+         	height: 30px; 
+         	position: relative; 
+         	left:5px;
+         } 
+         #buttonadd 
+         {
+          
+         	width: 35px; 
+         	height: 30px; 
+         	position: relative; 
+         	left: 10px;  
+
+         } 
+         #button4 
+         {
+         	 
+         	width: 35px; 
+         	height: 30px; 
+         	position: relative; 
+         	left: -10px;
+         } 
+         #button5 
+         {
+         	 
+         	width: 35px; 
+         	height: 30px; 
+         	position: relative; 
+         	left: 0px;
+         } 
+        #button6 
+        {
+        	width: 35px; 
+         	height: 30px; 
+         	position: relative;  
+         	left: 6px;
+         	
+
+        } 
+        #buttonsub 
+        {
+        	width: 35px; 
+         	height: 30px; 
+         	position: relative;  
+         	left: 10px;
+         	
+        } 
+        #button1 
+        {
+        	width: 35px; 
+         	height: 30px; 
+         	position: relative; 
+         	right: 10px; 
+         	
+        } 
+        #button2 
+        {
+        	width: 35px; 
+         	height: 30px; 
+         	position: relative; 
+         	
+        } 
+        #button3 
+        {
+        	width: 35px; 
+         	height: 30px; 
+         	position: relative; 
+         	left: 7px; 
+         	
+        } 
+        #buttonmul 
+        {
+        	width: 35px; 
+         	height: 30px; 
+         	position: relative; 
+            left: 10px;
+        } 
+        #button0 
+        {
+        	width: 35px; 
+         	height: 30px; 
+         	position: relative;  
+         	right: 10px;
+         	
+        } 
+        #buttonpoint 
+        {
+        	width: 35px; 
+         	height: 30px; 
+         	position: relative; 
+         
+        } 
+        #buttondiv
+        {
+        	width: 35px; 
+         	height: 30px; 
+         	position: relative; 
+         	left: 7px; 
+         	
+        } 
+        #buttonequal 
+        {
+        	width: 35px; 
+         	height: 30px; 
+         	position: relative; 
+         	left:10px;
+        } 
+        #on_button 
+        {
+        	position: relative; 
+        	top: 34px; 
+        	left:-48px;
+        } 
+        #off_button 
+        {
+        	position: relative; 
+        	top: 34px; 
+        	left:48px ;
+        } 
+    </style>
+</head>
+<body onload="inactived()">  
+     <center class="c1"> 
+    <div class="op"> 
+    <button ondblclick="actived()" id="on_button">ON</button> 
+    <button onclick="inactived()" id="off_button">Off</button> 
+	 <input type="text" id="result"><br><br> 
+	 <input type="button" id="button9"  value="9" onclick="document.getElementById('result').value+='9'"> 
+	 <input type="button" id="button8"  value="8" onclick="document.getElementById('result').value+='8'"> 
+	 <input type="button" id="button7"   value="7" onclick="document.getElementById('result').value+='7'"> 
+	 <input type="button" id="buttonadd" value="+" onclick="document.getElementById('result').value+='+'"><br><br> 
+	 <input type="button" id="button4" value="4" onclick="document.getElementById('result').value+='4'">  
+	 <input type="button" id="button5"value="5" onclick="document.getElementById('result').value+='5'">  
+	 <input type="button" id="button6"value="6" onclick="document.getElementById('result').value+='6'"> 
+	 <input type="button" id="buttonsub"value="-" onclick="document.getElementById('result').value+='-'"><br><br> 
+	 <input type="button" id="button1"value="1" onclick="document.getElementById('result').value+='1'"> 
+	 <input type="button" id="button2"value="2" onclick="document.getElementById('result').value+='2'"> 
+	 <input type="button" id="button3"value="3" onclick="document.getElementById('result').value+='3'"> 
+	 <input type="button" id="buttonmul"value="*" onclick="document.getElementById('result').value+='*'"><br></br> 
+	 <input type="button" id="button0"value="0" onclick="document.getElementById('result').value+='0'"> 
+	 <input type="button" id="buttonpoint"value="." onclick="document.getElementById('result').value+='.'"> 
+	 <input type="button" id="buttondiv"value="/" onclick="document.getElementById('result').value+='/'">   
+	 <input type="button" id="buttonequal"value="=" onclick ="calci()"><br><br>
+	 <input type="button" value="All Clear" onclick="document.getElementById('result').value=''"> 
+	</div> 
+</center>
+
+
+</body>
+</html>

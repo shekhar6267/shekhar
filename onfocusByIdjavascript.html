@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title> 
+	<script> 
+
+	        function calci() 
+	        {
+	        	var Fn=parseInt(document.getElementById("first_num").value); 
+	        	var Sn=parseInt(document.getElementById("Second_num").value); 
+	        	var op=document.getElementById("oper").value; 
+	        	if(op=="") 
+	        	{
+	        		document.getElementById("result").value=""; 
+	        		document.getElementById("result").readOnly=true; 
+	        	} 
+	        	if(op=="+")  
+	        	{
+	                 var r=Fn+Sn; 
+	                 document.getElementById("result").value=r; 
+	        	     document.getElementById("result").readOnly=true;	
+	        	} 
+	        	if(op=="-")  
+	        	{
+	        		var r=Fn-Sn; 
+	        		document.getElementById("result").value=r; 
+	        		document.getElementById("result").readOnly=true;
+	        	} 
+	        	if(op=="*")  
+	        	{
+	        		var r=Fn*Sn; 
+	        		document.getElementById("result").value=r; 
+	        		document.getElementById("result").readOnly=true;
+	        	} 
+	        	if(op=="/")  
+	        	{
+	        		var r=Fn/Sn; 
+	        		document.getElementById("result").value=r; 
+	        		document.getElementById("result").readOnly=true;
+	        	}
+	        } 
+	</script>
+</head>
+<body>
+      First Number :-<input type="text" id="first_num"><br><br> 
+      Second Number :-<input type="text" id="Second_num"><br><br>
+      Select operator :-<select id="oper"> 
+                               <option>Select operator</option> 
+                               <option value="+">+</option>  
+                               <option value="-">-</option> 
+                               <option value="*">*</option>
+                               <option value="/">/</option>
+                        </select> <br><br>
+      Result:-<input type="text" id="result" onfocus="calci()"><br><br>  
+</body>
+</html>
